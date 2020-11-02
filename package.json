@@ -1,6 +1,6 @@
 {
   "name": "wants-mobile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse request headers to see if a mobile bundle is wanted",
   "main": "dist/cjs/index.js",
   "module": "dist/index.js",

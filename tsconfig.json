@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "lib": ["esnext"],
+    "outDir": "dist",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2018"
+  }
+}

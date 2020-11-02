@@ -1,0 +1,32 @@
+{
+  "name": "wants-mobile",
+  "version": "1.0.0",
+  "description": "Parse request headers to see if a mobile bundle is wanted",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "keywords": [
+    "ua",
+    "useragent",
+    "user-agent",
+    "platform",
+    "parser",
+    "bowser",
+    "sec-ch-mobile",
+    "client",
+    "hints"
+  ],
+  "author": "Alec Larson",
+  "license": "MIT",
+  "prettier": "@alloc/prettier-config",
+  "devDependencies": {
+    "@alloc/prettier-config": "^1.0.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.5"
+  },
+  "files": [
+    "dist",
+    "index.ts"
+  ]
+}

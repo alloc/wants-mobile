@@ -5,6 +5,7 @@
   "main": "dist/cjs/index.js",
   "module": "dist/index.js",
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "tsc -p . && tsc -p . --outDir dist/cjs --module commonjs"
   },
   "keywords": [

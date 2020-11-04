@@ -5,7 +5,7 @@ export default function wantsMobile(headers: Headers) {
     return hint == '?1'
   }
   const ua = getHeader(headers, 'user-agent')
-  return ua ? matchers.some(matcher => matcher.test(ua)) : false
+  return typeof ua == 'string' && matchers.some(matcher => matcher.test(ua))
 }
 
 // Support web workers and node.js servers
@@ -13,10 +13,9 @@ type Headers = WebHeaders | PlainHeaders
 
 /** The `name` must be lowercase. */
 const getHeader = (headers: Headers, name: string) =>
-  '' +
-  (typeof headers.get == 'function'
+  typeof headers.get == 'function'
     ? headers.get(name)
-    : (headers as any)[name])
+    : (headers as PlainHeaders)[name]
 
 const matchers = [
   /* Android */

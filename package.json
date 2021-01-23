@@ -21,6 +21,7 @@
   ],
   "author": "Alec Larson",
   "license": "MIT",
+  "repository": "alloc/wants-mobile",
   "prettier": "@alloc/prettier-config",
   "devDependencies": {
     "@alloc/prettier-config": "^1.0.0",
